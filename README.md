@@ -5,7 +5,7 @@
 Author: Grant, Brendan  
 Last updated: 2020-02-27  
 
-### 1. NPN Transistor Circuit
+### 1. NPN Transistor Circuit (2N3904)
 
 *Voltage Measurements:*
 
@@ -19,13 +19,13 @@ Last updated: 2020-02-27
 
 *Current Measurements:*
 
-| Location      | Switch Off    | Switch On  |
+| **Location      | Switch Off    | Switch On**  |
 |:-------------:|:-------------:|:----------:|
 | At Collector  | 0.002µA       | 3.052mA    |
 | At Base       | 0.000µA       | 3.371mA    |
 | At Emitter    | 0.000µA       | 0.315mA    |
 
-### 2. PNP Transistor Circuit
+### 2. PNP Transistor Circuit (2N3906)
 
 *Voltage Measurements:*
 
