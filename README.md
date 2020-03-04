@@ -55,6 +55,8 @@ These three currents have the opposite behavior of the NPN transistor: they are 
 
 I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 
+![alt text](images/pnp-diagram.jpg "PNP Circuit Diagram")
+
 ### 3. Soil Sensor
 
 
