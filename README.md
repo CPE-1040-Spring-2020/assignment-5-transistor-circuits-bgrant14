@@ -29,6 +29,8 @@ These three currents are approximately zero when the input switch is off and bec
 
 I<sub>C</sub> / I<sub>B</sub> * 100 = 90.5%
 
+![alt text](images/npn-diagram.jpg "NPN Circuit Diagram")
+
 ### 2. PNP Transistor Circuit (2N3906)
 
 *Voltage Measurements:*
@@ -49,8 +51,10 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 90.5%
 | At Base (I<sub>B</sub>)      | 2.968mA       | 0.166µA    |
 | At Emitter (I<sub>E</sub>)   | 2.964mA       | 0.000µA    |
 
-These three currents behave in the opposite way of this in the NPN transistor, they are zero when the input switch is on and become substantially higher when the switch is off. In the off state, the base and emitter currents are much higher than the collector current.
+These three currents have the opposite behavior of the NPN transistor: they are zero when the input switch is on and become substantially higher when the switch is off. In the off state, the base and emitter currents are much higher than the collector current.
 
 I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
+
+### 3. Soil Sensor
 
 
