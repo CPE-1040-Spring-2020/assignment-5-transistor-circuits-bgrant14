@@ -3,7 +3,7 @@
 ## Assignment 5: Transistors
 
 Author: Grant, Brendan  
-Last updated: 2020-02-27  
+Last updated: 2020-03-03  
 
 ### 1. NPN Transistor Circuit (2N3904)
 
@@ -59,4 +59,4 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 
 ### 3. Soil Sensor
 
-
+1. The soil moisture probe uses an NPN transistor (the 2N3904 model tested above), one 100Ω resistor, and one 10KΩ resistor. Current flows towards the probes, but on the probe1 side it is blocked as it enters the collector side of the transistor. On the probe2 side, current flows through the 100Ω resistor and through the probe2 contacts. Current from the probe2 side then reaches the probe1 side which powers the base of the transistor. As a result, current can flow through the transistor to the signal contacts and finally through the 10KΩ resistor to ground. The transistor allows the current flowing through the soil to be amplified by the input power.
