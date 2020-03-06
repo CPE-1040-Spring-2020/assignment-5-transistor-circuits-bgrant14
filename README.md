@@ -79,4 +79,4 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 | V<sub>B<sub>WET</sub></sub> | 3.202V |
 | V<sub>B<sub>SOAK</sub></sub> | 3.916V |
 
-6.
+7. The manual calibration program initially does not display anything. When the A button is pressed, the microbit reads the moisture sensor and sets the value read as the minimum for the map. When the B button is pressed the same is done for the maximum value. Once both of these values have been initialized, the main program runs which reads the moisture level, maps the input to between 0 and 4, and displays the read value as rows on the screen. The program pauses for two seconds between each reading.
