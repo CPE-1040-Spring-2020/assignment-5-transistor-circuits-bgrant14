@@ -20,11 +20,10 @@ input.onButtonPressed(Button.B, function () {
 })
 
 //A simple function to plot up to 4 rows of LEDs corresponding to the sensor reading
-function display (rows: number) {
-    basic.clearScreen()
-    for (let i = 4; i > 4-rows; i--) {
+function display(rows: number) {
+    for (let i = 4; i > 4 - rows; i--) {
         for (let j = 0; j < 5; j++) {
-            led.plot(j, i)
+            led.plotBrightness(j, i, i * 63)
         }
     }
 }
@@ -38,6 +37,7 @@ basic.forever(function () {
         reading = pins.analogReadPin(AnalogPin.P0)
         pins.digitalWritePin(DigitalPin.P12, 0)
         //Calls the display function, with the value read from the sensor mapped to between 0 and 4
+        basic.clearScreen()
         display(pins.map(reading, min, max, 0, 4))
         basic.pause(2000)
     }
