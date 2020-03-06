@@ -7,7 +7,10 @@ input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P12, 1)
     basic.pause(500)
     min = pins.analogReadPin(AnalogPin.P0)
-    pins.digitalWritePin(DigitalPin.P0, 0)
+    pins.digitalWritePin(DigitalPin.P12, 0)
+    basic.showIcon(IconNames.Yes)
+    basic.pause(500)
+    basic.clearScreen()
 })
 
 //On pressing button B the sensor is activated, read, and deactivated
@@ -16,7 +19,10 @@ input.onButtonPressed(Button.B, function () {
     pins.digitalWritePin(DigitalPin.P12, 1)
     basic.pause(500)
     max = pins.analogReadPin(AnalogPin.P0)
-    pins.digitalWritePin(DigitalPin.P0, 0)
+    pins.digitalWritePin(DigitalPin.P12, 0)
+    basic.showIcon(IconNames.Yes)
+    basic.pause(500)
+    basic.clearScreen()
 })
 
 //A simple function to plot up to 4 rows of LEDs corresponding to the sensor reading
