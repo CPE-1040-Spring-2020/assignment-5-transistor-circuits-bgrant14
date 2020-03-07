@@ -3,7 +3,7 @@
 ## Assignment 5: Transistors
 
 Author: Grant, Brendan  
-Last updated: 2020-03-03  
+Last updated: 2020-03-07  
 
 ### 1. NPN Transistor Circuit (2N3904)
 
@@ -80,3 +80,9 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 | V<sub>B<sub>SOAK</sub></sub> | 3.916V |
 
 7. The manual calibration program initially does not display anything. When the A button is pressed, the microbit reads the moisture sensor and sets the value read as the minimum for the map. When the B button is pressed the same is done for the maximum value. Once both of these values have been initialized, the main program runs which reads the moisture level, maps the input to between 0 and 4, and displays the read value as rows on the screen. The program pauses for two seconds between each reading.
+
+### 4. Automatic Calibration
+
+2. This program is a modified version of the manual calibration version. Instead of using the buttons, the auto-calibration mode is triggered by the forever loop until the values for min and max have been initialized. This code first displays a down arrow to prompt the user to allow the program to take a lower bound reading. Three of these readings are taken, and then an up arrow is displayed before the user immerses the prongs in water for the upper bound readings.
+
+
