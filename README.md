@@ -84,13 +84,12 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 
 8. The code that causes the power pulse is:
 
->pins.digitalWritePin(DigitalPin.P12, 1)
-
->basic.pause(500)
-
->pins.digitalWritePin(DigitalPin.P12, 0)
-
->basic.pause(2000)
+```javascript
+pins.digitalWritePin(DigitalPin.P12, 1)
+basic.pause(500)
+pins.digitalWritePin(DigitalPin.P12, 0)
+basic.pause(2000)
+```
 
 The width of the power pulse measured by the oscilloscope was 510ms.
 
