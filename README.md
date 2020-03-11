@@ -91,5 +91,3 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 
 1. The program adds to the auto-calibration code, but with an array of led pins initialized at the beginning and a couple of lines of code added to the display function. The display function now uses two for-loops to initially turn all of the leds off, then to turn on the leds corresponding to the amount of moisture being sensed.
 [Video Demonstration](https://i.imgur.com/S8jeEJc.mp4)
-
-2.
