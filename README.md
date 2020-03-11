@@ -87,4 +87,9 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 2. This program is a modified version of the manual calibration version. Instead of using the buttons, the auto-calibration mode is triggered by the forever loop until the values for min and max have been initialized. This code first displays a down arrow to prompt the user to take a lower bound reading. Three of these readings are taken, and then an up arrow is displayed before the user immerses the prongs in water for the upper bound readings.
 [Video Demonstration](https://i.imgur.com/c3DJ97G.mp4)
 
+### 5. Project Extensions
 
+1. The program adds to the auto-calibration code, but with an array of led pins initialized at the beginning and a couple of lines of code added to the display function. The display function now uses two for-loops to initially turn all of the leds off, then to turn on the leds corresponding to the amount of moisture being sensed.
+[Video Demonstration](https://i.imgur.com/S8jeEJc.mp4)
+
+2.
