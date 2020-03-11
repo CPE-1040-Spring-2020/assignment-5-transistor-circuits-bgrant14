@@ -2,25 +2,34 @@
 let reading, min = -1, max = -1
 
 function autoCal() {
-    while (pins.analogReadPin(AnalogPin.P0) > 20) {
+    //Allows the user 5 seconds to dry the sensors
+    for (let i = 0; i < 5; i++) {
         basic.showArrow(4)
+        basic.pause(100)
+        basic.clearScreen()
+        basic.pause(50)
     }
-    min = 0
+    //takes three readings, adds them to min
     for (let i = 0; i < 3; i++) {
-        basic.showNumber(i + 1)
+        basic.showNumber(i + 1) //displays reading number
         pins.digitalWritePin(DigitalPin.P12, 1)
         basic.pause(500)
         min += pins.analogReadPin(AnalogPin.P0)
         pins.digitalWritePin(DigitalPin.P12, 0)
         basic.pause(500)
     }
-    min /= 3
+    min /= 3 //takes the average
     basic.showIcon(IconNames.Yes)
     basic.pause(250)
 
-    while (pins.analogReadPin(AnalogPin.P0) < 800) {
+    //Allows the user five seconds to submerse the sensors
+    for (let i = 0; i < 5; i++) {
         basic.showArrow(0)
+        basic.pause(100)
+        basic.clearScreen()
+        basic.pause(50)
     }
+    //takes three readings, adds them to max
     for (let i = 0; i < 3; i++) {
         basic.showNumber(i + 1)
         pins.digitalWritePin(DigitalPin.P12, 1)
@@ -29,7 +38,7 @@ function autoCal() {
         pins.digitalWritePin(DigitalPin.P12, 0)
         basic.pause(500)
     }
-    max /= 3
+    max /= 3 //calculates the average
     basic.showString("Calibration success")
 }
 
