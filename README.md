@@ -82,6 +82,18 @@ I<sub>C</sub> / I<sub>B</sub> * 100 = 0.4%
 7. The manual calibration program initially does not display anything. When the A button is pressed, the microbit reads the moisture sensor and sets the value read as the minimum for the map. When the B button is pressed the same is done for the maximum value. Once both of these values have been initialized, the main program runs which reads the moisture level, maps the input to between 0 and 4, and displays the read value as rows on the screen. The program pauses for two seconds between each reading.
 [Video Demonstration](https://i.imgur.com/CExbKWx.mp4)
 
+8. The code that causes the power pulse is:
+
+>pins.digitalWritePin(DigitalPin.P12, 1)
+
+>basic.pause(500)
+
+>pins.digitalWritePin(DigitalPin.P12, 0)
+
+>basic.pause(2000)
+
+The width of the power pulse measured by the oscilloscope was 510ms.
+
 ### 4. Automatic Calibration
 
 2. This program is a modified version of the manual calibration version. Instead of using the buttons, the auto-calibration mode is triggered by the forever loop until the values for min and max have been initialized. This code first displays a down arrow to prompt the user to take a lower bound reading. Three of these readings are taken, and then an up arrow is displayed before the user immerses the prongs in water for the upper bound readings.
